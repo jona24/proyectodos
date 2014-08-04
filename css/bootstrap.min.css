@@ -1,3 +1,18 @@
+body {
+   background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7R6mLnaRDUJLEZ_JMIZCarmacm9C5UXEjx-kQxJApbsZHl_M39w');
+   background-repeat: no-repeat;
+   background-size: 1400px;
+     }
+#imgcarreras,
+#imgestudiantes,
+#imgextencion{
+
+  margin: 15px;
+  padding: 30px;
+}
+#confimg{ 
+padding-left: 110px;
+} 
 /*!
  * Bootstrap v3.2.0 (http://getbootstrap.com)
  * Copyright 2011-2014 Twitter, Inc.
