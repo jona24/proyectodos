@@ -1,18 +1,39 @@
-body {
+	body
+    {
    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7R6mLnaRDUJLEZ_JMIZCarmacm9C5UXEjx-kQxJApbsZHl_M39w');
    background-repeat: no-repeat;
    background-size: 1400px;
      }
-#imgcarreras,
-#imgestudiantes,
-#imgextencion{
+    #imgcarreras,
+    #imgestudiantes,
+    #imgextencion
+	{
 
-  margin: 15px;
-  padding: 30px;
-}
-#confimg{ 
-padding-left: 110px;
-} 
+  		margin: 15px;
+  		padding: 30px;
+	}
+    #confimg
+    { 
+		padding-left: 110px;
+    } 
+    #pie
+    {
+         margin: 400px;
+         
+    }
+    #formulario
+    {
+    	padding: 50px;
+    	padding-top: 5px;
+        margin-left: 350px;
+        margin-top: 5px;
+        background-color: #81BEF7;
+        text-align: left;
+        border: 2px solid black;
+        max-width: 600px;
+        color: #0101DF;
+        border-radius: 10px;
+    }
 /*!
  * Bootstrap v3.2.0 (http://getbootstrap.com)
  * Copyright 2011-2014 Twitter, Inc.
