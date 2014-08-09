@@ -4,18 +4,13 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <Meta http-equiv = "Content-Type" content = "text / html; charset = utf-8"/>
+    <script type="text/javascript" src="js/jquery-1.11.1.js"></script>
+    <script type="text/javascript" src="js/prueba.js"></script>
+  
     <title>NUEVA CARRERA</title>
-
-    <!-- Bootstrap -->
    <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-   
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+    <link href="css/bootstrap.min.css" rel="stylesheet">   
   </head>
   <body>
       <nav role="navigation" class="navbar navbar-inverse">
@@ -68,6 +63,26 @@
             <img id="imgcarreras"src="http://www.utn.ac.cr/images/carreras.png">
             <img id="imgestudiantes"src="http://www.utn.ac.cr/images/estudiantes.png">
      </div>
+     <form id="nueva_carrera">
+      <ul>
+         <li> 
+             <label for="txtID">ID CARRERA:</label>
+             <input  type="text" id="id_carrera"/>
+         </li> 
+         <li>
+             <label for="txtName">NOMBRE:</label>
+             <input  type="text" id="nombre"/> 
+         </li> 
+         <li> 
+         <button id="guardar">GUARDAR</button> 
+         </li> 
+         </ul> 
+         </form> 
+         <table id="tblList"></table>
      <footer><center>Derechos reservados Autor Jonathan Alvarez</center></footer>
+      <script type="text/javascript">
+                   prepareBinding();
+                   lista();   
+      </script>
   </body>
 </html>

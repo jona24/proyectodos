@@ -3122,7 +3122,7 @@ tbody.collapse.in {
 .dropdown {
   position: relative;
  }
-
+ 
 .dropdown-toggle:focus {
   outline: 0;
  }
@@ -3140,9 +3140,6 @@ tbody.collapse.in {
   text-align: left;
   list-style: none;
   background-color: #fff;
-  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStAfC31lnDByUZm251iypuIy4U6XuEOicEwzsjpNoHNenWJzuk');
-  background-size: 1100px;
-  background-repeat: no-repeat;
   -webkit-background-clip: padding-box;
           background-clip: padding-box;
   border: 1px solid #ccc;
@@ -3169,9 +3166,6 @@ tbody.collapse.in {
   line-height: 1.42857143;
   color: #333;
   white-space: nowrap;
-  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStAfC31lnDByUZm251iypuIy4U6XuEOicEwzsjpNoHNenWJzuk');
-  background-size: 1100px;
-  background-repeat: no-repeat;
 }
 .dropdown-menu > li > a:hover,
 .dropdown-menu > li > a:focus {
