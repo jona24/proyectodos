@@ -2,29 +2,56 @@
     {
    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7R6mLnaRDUJLEZ_JMIZCarmacm9C5UXEjx-kQxJApbsZHl_M39w');
    background-repeat: no-repeat;
-   background-size: 1400px;
-     }
+   background-size: 2400px;
+   }
     #imgcarreras,
     #imgestudiantes,
     #imgextencion
 	{
-
-  		margin: 15px;
+      margin-top: 1px;
+  		margin: 10px;
   		padding: 30px;
-	}
+      padding-top: 0px;
+	}  
     #confimg
     { 
-		padding-left: 110px;
+      margin-top: -30px;
+		  padding-left: 110px;
+      padding-top: 5px;
+    } 
+    #navar 
+    { 
+      margin-top: 1px;
+      padding-left: 110px;
+      padding-top: 5px;
     } 
     #pie
     {	
          margin: 400px;
          
     }
+     #nuevo_usuario
+     {
+        background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7R6mLnaRDUJLEZ_JMIZCarmacm9C5UXEjx-kQxJApbsZHl_M39w');
+        background-repeat: no-repeat;
+        background-size: 600px;
+        padding: 50px;  
+        padding-right: 60px;
+        padding-top: -20px;
+        margin-left: 450px;
+        margin-top: -20px;
+        background-color: #81BEF7;
+        text-align: left;
+        border: 2px solid black;
+        max-width: 410px ;    
+        max-height: 310px;
+        color: #0101DF;
+        border-radius: 10px;
+     }
     #formulario
-    {
-    	padding: 50px;
-    	padding-top: 5px;
+       {
+    	 padding: 50px;
+    	 padding-top: 5px;
         margin-left: 350px;
         margin-top: 5px;
         background-color: #81BEF7;
@@ -34,6 +61,68 @@
         color: #0101DF;
         border-radius: 10px;
     }
+
+    .btnEdit{
+    background-image: url('http://www.iconarchive.com/download/i80229/custom-icon-design/flatastic-1/edit.ico');
+    background-repeat: no-repeat;
+    background-size: 25px;
+    background-position: center;
+    background-position: center;
+    border: 1px solid #125CB5;
+    border-radius: 5px;
+    padding: .8em 1.8em;
+    color: white;
+    font-size: 8;
+    text-decoration:none;
+    text-decoration:none;
+    width: 50px;
+    height: 20px;
+    text-align: center;
+            }
+    .btnDelete{
+   background-image: url('http://www.fancyicons.com/free-icons/112/must-have/png/256/remove_256.png');
+   background-repeat: no-repeat;
+   background-size: 30px;
+   background-position: center;
+    border: 1px solid #125CB5;
+    border-radius: 5px;
+    padding: .8em 1.8em;
+    color: white;
+    font-size: 8;
+    text-decoration:none;
+    width: 50px;
+    height: 25px;
+    text-align: center;
+}
+body,
+#login {
+   background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7R6mLnaRDUJLEZ_JMIZCarmacm9C5UXEjx-kQxJApbsZHl_M39w');
+   color: #262626;
+   background-repeat: no-repeat;
+   background-size: 2400px;
+   font-family: Arial, san-serif;
+}
+#login
+{
+background-color: #9dd9fa;
+ width:300px;
+ height:400px;
+ border-radius: 20px;
+}
+#iutn{
+
+   width:200px;
+   height:150px; 
+   border-radius: 20px;
+  
+}
+#tabla{
+      padding-right: 50px;
+      margin-left: 500px;
+      margin-top: 10px;
+      background-image: url("fondo.jpeg");
+     font color: black;
+      }
 /*!
  * Bootstrap v3.2.0 (http://getbootstrap.com)
  * Copyright 2011-2014 Twitter, Inc.
