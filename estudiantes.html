@@ -5,9 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
-    <title>NUEVO USUARIO</title>
+    <title>NUEVO ESTUDIANTE</title>
        <script type="text/javascript" src="js/jquery-1.11.1.js"></script>
-       <script type="text/javascript" src="js/funciones_usuario.js"></script>
+       <script type="text/javascript" src="js/funcion_estudiante.js"></script>
        <link href="css/bootstrap.min.css" rel="stylesheet">
       </head>
   <body>
@@ -45,30 +45,43 @@
            		 <img id="imgcarreras"src="http://www.utn.ac.cr/images/carreras.png">
            		 <img id="imgestudiantes"src="http://www.utn.ac.cr/images/estudiantes.png">
         </div>
-        <form id="nuevo_usuario">
+        <form id="nuevo_estudiante">
      		 <ul>
         	      <div class="form-group">
-							<label for="apellido">NOMBRE COMPLETO</label>
-                     	    <input type="text" class="form-control" id="txtnombre"placeholder="nombre">
+						            	<label for="apellido">NOMBRE</label>
+                     	    <input type="text" class="form-control" id="txtnombre"placeholder="">
                   </div>
             	  <div class="form-group">
-                             <label for="apellido">USUARIO</label>
-                             <input type="text" class="form-control" id="txtusuario"placeholder="user">
+                             <label for="apellido">APELLIDO 1</label>
+                             <input type="text" class="form-control" id="txtapellido1"placeholder="">
                    </div>                  
                    <div class= "form-group">
-                             <label for="apellido">CONTRASEÑA</label>
-                             <input type="text" class="form-control" id="txtcontra" placeholder="Password">
+                             <label for="apellido">APELLIDO 2</label>
+                             <input type="text" class="form-control" id="txtapellido2" placeholder="">
                     </div>
-                      
+                     <div class= "form-group">
+                             <label for="apellido">CEDULA</label>
+                             <input type="text" class="form-control" id="txtcedula" placeholder="">
+                    </div>
+                                       <div class= "form-group">
+                             <label for="apellido">CARRERA</label>
+                             <input type="text" class="form-control" id="txtcarrera" placeholder="">
+                    </div>
+                    <div class= "form-group">
+                             <label for="apellido">CORREO</label>
+                             <input type="text" class="form-control" id="txtcorreo" placeholder="">
+                    </div>
+                    <div class= "form-group">
+                             <label for="apellido">FOTO</label>
+                             <input type="file" class="form-control" id="txtfoto" placeholder="">
+                    </div>
                       <input type="submit" value="GUARDAR" id="btnSave"/>
-                      <button id ="borrar">borrar</button>
                 
-             </ul> 
+                
+             </ul>  
          </form> 
-         <table id="tabla"></table>
-           <script type="text/javascript">
-                   prepareBinding();
-                  cargarusuarios();  
-      </script>
+         <table id="tblList"></table>
+                 <script type="text/javascript">list();</script>
+                 <script type="text/javascript">prepareBinding();</script>
   </body>
 </html>

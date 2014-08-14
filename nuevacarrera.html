@@ -9,11 +9,11 @@
     <script type="text/javascript" src="js/prueba.js"></script>
   
     <title>NUEVA CARRERA</title>
-   <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">   
-  </head>
+   
+       <link href="css/bootstrap.min.css" rel="stylesheet">
+      </head>
   <body>
-      <nav role="navigation" class="navbar navbar-inverse">
+      <nav role="navigation" class="navbar navbar-inverse" id ="navar">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
         <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
@@ -24,64 +24,46 @@
         </button>
     </div>
     <!-- Collection of nav links, forms, and other content for toggling -->
-    <div id="navbarCollapse" class="collapse navbar-collapse">
+       <div id="navbarCollapse" class="collapse navbar-collapse">
         <ul class="nav navbar-nav">
-        <li><a href="index.html">DASHBOARD</a></li>
-             <li class="dropdown">
-                <a data-toggle="dropdown" class="dropdown-toggle" href="#">CARRERAS<b class="caret"></b></a>
-                <ul role="menu" class="dropdown-menu">
-                    <li><a href="nuevacarrera.html">CREAR</a></li>
-                    <li><a href="modificarcarrera.html">MODIFICAR</a></li>
-                    <li><a href="borrarcarrera.html">ELIMINAR</a></li>
-                </ul>
-            </li>
-            <li class="dropdown">
-                <a data-toggle="dropdown" class="dropdown-toggle" href="#">ESTUDIANTES<b class="caret"></b></a>
-                <ul role="menu" class="dropdown-menu">
-                    <li><a href="nuevoestudiante.html">CREAR</a></li>
-                    <li><a href="modificarestudiante.html">MODIFICAR</a></li>
-                    <li><a href="borrarestudiante.html">ELIMINAR</a></li>
-                </ul>
-            </li>                   
-            <li class="dropdown">
-                <a data-toggle="dropdown" class="dropdown-toggle" href="#">USUARIOS<b class="caret"></b></a>
-                <ul role="menu" class="dropdown-menu">
-                    <li><a href="nuevousuario.html">CREAR</a></li>
-                    <li><a href="modificarusuario.html">MODIFICAR</a></li>
-                    <li><a href="borrarusuario.html">ELIMINAR</a></li>
-                </ul>
-            </li>
+            <li class="active"><a href="index.html">INICIO</a></li>
+            <li><a href="estudiantes.html">ESTUDIANTES</a></li>
+            <li><a href="nuevacarrera.html">CARRERAS</a></li>
+            <li><a href="nuevousuario.html">USUARIOS</a></li>
+        </ul>
+        </form>
+        <ul class="nav navbar-nav navbar-right">
+            <li><a href="login.html">Login</a></li>
         </ul>
     </div>
+    
          <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
     </nav>
         <div id="confimg">
-            <img id="imgextencion" src="http://www.utn.ac.cr/images/extension.png">
-            <img id="imgcarreras"src="http://www.utn.ac.cr/images/carreras.png">
-            <img id="imgestudiantes"src="http://www.utn.ac.cr/images/estudiantes.png">
-     </div>
-     <form id="nueva_carrera">
-      <ul>
-         <li> 
-             <label for="txtID">ID CARRERA:</label>
-             <input  type="text" id="id_carrera"/>
-         </li> 
-         <li>
-             <label for="txtName">NOMBRE:</label>
-             <input  type="text" id="nombre"/> 
-         </li> 
-         <li> 
-         <input type="submit" value="GUARDAR" id="btnSave"/>
-         <button id ="borrar">borrar</button>
-         </li> 
-         </ul> 
+                 <img id="imgextencion" src="http://www.utn.ac.cr/images/extension.png">
+                 <img id="imgcarreras"src="http://www.utn.ac.cr/images/carreras.png">
+                 <img id="imgestudiantes"src="http://www.utn.ac.cr/images/estudiantes.png">
+        </div>
+        <form id="nuevo_usuario">
+             <ul>
+                  <div class="form-group">
+                            <label for="apellido">ID CARRERA</label>
+                            <input type="text" class="form-control" id="id_carrera"placeholder="ID">
+                  </div>
+                  <div class="form-group">
+                             <label for="apellido">NOMBRE</label>
+                             <input type="text" class="form-control" id="txtusuario"placeholder="Nombre">
+                   </div>                  
+                                         
+                      <input type="submit" value="GUARDAR" id="btnSave"/>
+                              
+             </ul> 
          </form> 
          <table id="tabla"></table>
-          <footer><center>Derechos reservados Autor Jonathan Alvarez</center></footer>
-      <script type="text/javascript">
+         <script type="text/javascript">
                    prepareBinding();
                   cargarcarreras();  
       </script>

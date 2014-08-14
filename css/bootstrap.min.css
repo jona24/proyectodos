@@ -118,10 +118,24 @@ background-color: #9dd9fa;
 }
 #tabla{
       padding-right: 50px;
-      margin-left: 500px;
+      margin-left: 460px;
       margin-top: 10px;
-      background-image: url("fondo.jpeg");
-     font color: black;
+      background-color: white;
+       border-radius: 20px;   
+       color: black;
+
+      }
+      .foot
+      {
+   margin-top: 500px;
+   padding-top: 300px;
+      }
+      #nuevo_estudiante
+      {
+       margin-right: 1000px;
+       margin-left: 20px;
+       border-radius: 10px;
+       border: 2px solid #262626;
       }
 /*!
  * Bootstrap v3.2.0 (http://getbootstrap.com)

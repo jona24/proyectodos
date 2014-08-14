@@ -62,7 +62,7 @@ $(".btnte").bind("click", function()
    
 function cargarusuarios(){
   var datos=JSON.parse(localStorage.getItem("usuarios"));
-  var html="<table id=tabla class=table>";
+  var html="<table id=tabla class=table cellspacing = 15px>";
       html+="<center><h3> USUARIOS</h3></center>";
         html+="<tr id=row0 style='background-color: #0099CC;color:white'>";
           html+="<td><strong>Nombre</strong></td>";

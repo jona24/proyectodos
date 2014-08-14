@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
-    <title>NUEVO USUARIO</title>
+    <title>NUEVO ESTUDIANTE</title>
        <script type="text/javascript" src="js/jquery-1.11.1.js"></script>
        <script type="text/javascript" src="js/funciones_usuario.js"></script>
        <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -48,18 +48,29 @@
         <form id="nuevo_usuario">
      		 <ul>
         	      <div class="form-group">
-							<label for="apellido">NOMBRE COMPLETO</label>
+							<label for="apellido">NOMBRE</label>
                      	    <input type="text" class="form-control" id="txtnombre"placeholder="nombre">
                   </div>
             	  <div class="form-group">
-                             <label for="apellido">USUARIO</label>
-                             <input type="text" class="form-control" id="txtusuario"placeholder="user">
+                             <label for="apellido">APELLIDO 1</label>
+                             <input type="text" class="form-control" id="txtapellido1" placeholder="">
                    </div>                  
                    <div class= "form-group">
-                             <label for="apellido">CONTRASEÑA</label>
-                             <input type="text" class="form-control" id="txtcontra" placeholder="Password">
+                             <label for="apellido">APELLIDO 2</label>
+                             <input type="text" class="form-control" id="txtspellido2" placeholder="">
                     </div>
-                      
+                     <div class= "form-group">
+                             <label for="apellido">CEDULA</label>
+                             <input type="text" class="form-control" id="txtcedula" placeholder="">
+                    </div>
+                       <div class= "form-group">
+                             <label for="apellido">CORREO</label>
+                             <input type="text" class="form-control" id="txtcorreo" placeholder="">
+                    </div>
+                     <div class= "form-group">
+                             <label for="apellido"></label>
+                             <input type="file" class="form-control" id="txtfoto" placeholder="">
+                    </div>
                       <input type="submit" value="GUARDAR" id="btnSave"/>
                       <button id ="borrar">borrar</button>
                 
@@ -68,7 +79,7 @@
          <table id="tabla"></table>
            <script type="text/javascript">
                    prepareBinding();
-                  cargarusuarios();  
+                   
       </script>
   </body>
 </html>
