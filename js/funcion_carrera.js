@@ -4,8 +4,8 @@
 {
 var carreras = JSON.parse(localStorage.getItem("carreras"));
 debugger;
- 		$("#tblList").html(""); 
-  $("#tblList").html(
+ 		$("#tblListcarrera").html(""); 
+  $("#tblListcarrera").html(
 	 "<thead>"+ 
 	       "	<tr>"+
 	       "   	<th></th>"+
@@ -22,7 +22,7 @@ debugger;
 	    for(var i=0;i<carreras.length;i++)
         {
               var cli =carreras[i]; 
-	       		$("#tblList tbody").append("<tr>"+ 
+	       		$("#tblListcarrera tbody").append("<tr>"+ 
 	       			 "	<td><img src='edit.png' alt='Edit"+i+"' class='btnEdit'/><img src='delete.png' alt='Delete"+i+"' class='btnDelete'/></td>" +
                "	<td>"+cli.nombre_carrera+"</td>" + 
                "	<td>"+cli.id_carrera+"</td>" + 

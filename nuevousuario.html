@@ -1,79 +1,79 @@
-<!DOCTYPE html>
-<html>
-<head>
+  <!DOCTYPE html>
+  <html>
+  <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
     <title>NUEVO USUARIO</title>
-       <script type="text/javascript" src="js/jquery-1.11.1.js"></script>
-       <script type="text/javascript" src="js/funciones_usuario.js"></script>
-       <link href="css/bootstrap.min.css" rel="stylesheet">
-      </head>
+    <script type="text/javascript" src="js/jquery-1.11.1.js"></script>
+    <script type="text/javascript" src="js/funciones_usuario.js"></script>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+  </head>
   <body>
 
-      <nav role="navigation" class="navbar navbar-inverse" id ="navar">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
+    <nav role="navigation" class="navbar navbar-inverse" id ="navar">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
         <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
         </button>
-    </div>
-    <!-- Collection of nav links, forms, and other content for toggling -->
-       <div id="navbarCollapse" class="collapse navbar-collapse">
+      </div>
+      <!-- Collection of nav links, forms, and other content for toggling -->
+      <div id="navbarCollapse" class="collapse navbar-collapse">
         <ul class="nav navbar-nav">
-            <li class="active"><a href="index.html">INICIO</a></li>
-            <li><a href="estudiantes.html">ESTUDIANTES</a></li>
-            <li><a href="nuevacarrera.html">CARRERAS</a></li>
-            <li><a href="nuevousuario.html">USUARIOS</a></li>
+          <li class="active"><a href="index.html">INICIO</a></li>
+          <li><a href="estudiantes.html">ESTUDIANTES</a></li>
+          <li><a href="nuevacarrera.html">CARRERAS</a></li>
+          <li><a href="nuevousuario.html">USUARIOS</a></li>
         </ul>
-        </form>
-        <ul class="nav navbar-nav navbar-right">
-            <li><a href="login.html">Login</a></li>
-        </ul>
+      </form>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="login.html">Login</a></li>
+      </ul>
     </div>
     
-         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
-    </nav>
-        <div id="confimg">
-           		 <img id="imgextencion" src="http://www.utn.ac.cr/images/extension.png">
-           		 <img id="imgcarreras"src="http://www.utn.ac.cr/images/carreras.png">
-           		 <img id="imgestudiantes"src="http://www.utn.ac.cr/images/estudiantes.png">
-        </div>
-        <form id="nuevo_usuario">
-     		 <ul>
-        	      <div class="form-group">
-							<label for="apellido">NOMBRE COMPLETO</label>
-                     	    <input type="text" class="form-control" id="txtnombre"placeholder="nombre">
-                  </div>
-            	  <div class="form-group">
-                             <label for="apellido">USUARIO</label>
-                             <input type="text" class="form-control" id="txtusuario"placeholder="user">
-                   </div>                  
-                   <div class= "form-group">
-                             <label for="apellido">CONTRASEÑA</label>
-                             <input type="password" class="form-control" id="txtcontra" placeholder="Password">
-                    </div>
-                       <div class= "form-group">
-                             <label for="apellido">TIPO DE USUARIO</label>
-                             <select id ="combo">
-                                <option selected> ---</option>
-                                  <option value="admin">Administrador</option>
-                                <option value="usuario">usuario</option>
-                             </select> 
-                    </div>
-                      <input type="button" value="GUARDAR" id="btnsave"/>
-                      <input type="button" value="MODIFICAR" id="btnmodificar"/>
-                     </ul> 
-         </form>
-          <table id="tblList"></table>
-         <script type="text/javascript">cargarlista();</script>
-         <script type="text/javascript">prepareBinding();</script>
-         </body>
+  </nav>
+  <div id="confimg">
+    <img id="imgextencion" src="http://www.utn.ac.cr/images/extension.png">
+    <img id="imgcarreras"src="http://www.utn.ac.cr/images/carreras.png">
+    <img id="imgestudiantes"src="http://www.utn.ac.cr/images/estudiantes.png">
+  </div>
+  <form id="nuevo_usuario">
+    <ul>
+     <div class="form-group">
+       <label for="apellido">NOMBRE COMPLETO</label>
+       <input type="text" class="form-control" id="txtnombre"placeholder="nombre">
+     </div>
+     <div class="form-group">
+       <label for="apellido">USUARIO</label>
+       <input type="text" class="form-control" id="txtusuario"placeholder="user">
+     </div>                  
+     <div class= "form-group">
+       <label for="apellido">CONTRASEÑA</label>
+       <input type="password" class="form-control" id="txtcontra" placeholder="Password">
+     </div>
+     <div class= "form-group">
+       <label for="apellido">TIPO DE USUARIO</label>
+       <select id ="combo">
+        <option selected> ---</option>
+        <option value="admin">Administrador</option>
+        <option value="usuario">usuario</option>
+      </select> 
+    </div>
+    <input type="button" value="GUARDAR" id="btnsave"/>
+    <input type="button" value="MODIFICAR" id="btnmodificar"/>
+  </ul> 
+</form>
+<table id="tblistusuario"></table>
+<script type="text/javascript">cargarlista();</script>
+<script type="text/javascript">prepareBinding();</script>
+</body>
 </html>
