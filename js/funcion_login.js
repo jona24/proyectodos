@@ -25,7 +25,15 @@ function acceso()
          {
             entro = true;
             alert("Bienvenido "+ usuario);
-            location.href='index.html';
+            if (usuarios[i].tipo=="admin")
+            {
+             location.href='index.html';
+            }
+            else
+            {
+             location.href='index_visual.html'; 
+            }
+            
          }
      }   
    if (entro==false){

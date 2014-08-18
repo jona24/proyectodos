@@ -63,9 +63,9 @@
                              <label for="apellido">CEDULA</label>
                              <input type="text" class="form-control" id="txtcedula" placeholder="">
                     </div>
-                                       <div class= "form-group">
+                    <div class= "form-group">
                              <label for="apellido">CARRERA</label>
-                             <input type="text" class="form-control" id="txtcarrera" placeholder="">
+                             <select id ="combo"></select>
                     </div>
                     <div class= "form-group">
                              <label for="apellido">CORREO</label>
@@ -75,13 +75,15 @@
                              <label for="apellido">FOTO</label>
                              <input type="file" class="form-control" id="txtfoto" placeholder="">
                     </div>
-                      <input type="submit" value="GUARDAR" id="btnSave"/>
+                       <input type="button" value="GUARDAR" id="btnsave"/>
+                      <input type="button" value="MODIFICAR" id="btnmodificar"/>
                 
                 
              </ul>  
          </form> 
          <table id="tblList"></table>
-                 <script type="text/javascript">list();</script>
-                 <script type="text/javascript">prepareBinding();</script>
+         <script type="text/javascript">cargarcombo();</script>
+         <script type="text/javascript">cargarlista();</script>
+         <script type="text/javascript">prepareBinding();</script>
   </body>
 </html>

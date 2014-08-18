@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <Meta http-equiv = "Content-Type" content = "text / html; charset = utf-8"/>
     <script type="text/javascript" src="js/jquery-1.11.1.js"></script>
-    <script type="text/javascript" src="js/prueba.js"></script>
+    <script type="text/javascript" src="js/funcion_carrera.js"></script>
   
     <title>NUEVA CARRERA</title>
    
@@ -55,17 +55,17 @@
                   </div>
                   <div class="form-group">
                              <label for="apellido">NOMBRE</label>
-                             <input type="text" class="form-control" id="txtusuario"placeholder="Nombre">
+                             <input type="text" class="form-control" id="txtnombre"placeholder="Nombre">
                    </div>                  
                                          
-                      <input type="submit" value="GUARDAR" id="btnSave"/>
+                      <input type="button" value="GUARDAR" id="btnsave"/>
+                      <input type="button" value="MODIFICAR" id="btnmodificar"/>
                               
              </ul> 
          </form> 
-         <table id="tabla"></table>
-         <script type="text/javascript">
-                   prepareBinding();
-                  cargarcarreras();  
-      </script>
+         <table id="tblList"></table>
+         <script type="text/javascript">cargarlista();</script>
+         <script type="text/javascript">prepareBindig();</script>
+                     
   </body>
 </html>

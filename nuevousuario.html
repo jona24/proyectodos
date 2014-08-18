@@ -11,6 +11,7 @@
        <link href="css/bootstrap.min.css" rel="stylesheet">
       </head>
   <body>
+
       <nav role="navigation" class="navbar navbar-inverse" id ="navar">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -57,18 +58,22 @@
                    </div>                  
                    <div class= "form-group">
                              <label for="apellido">CONTRASEÑA</label>
-                             <input type="text" class="form-control" id="txtcontra" placeholder="Password">
+                             <input type="password" class="form-control" id="txtcontra" placeholder="Password">
                     </div>
-                      
-                      <input type="submit" value="GUARDAR" id="btnSave"/>
-                      <button id ="borrar">borrar</button>
-                
-             </ul> 
-         </form> 
-         <table id="tabla"></table>
-           <script type="text/javascript">
-                   prepareBinding();
-                  cargarusuarios();  
-      </script>
-  </body>
+                       <div class= "form-group">
+                             <label for="apellido">TIPO DE USUARIO</label>
+                             <select id ="combo">
+                                <option selected> ---</option>
+                                  <option value="admin">Administrador</option>
+                                <option value="usuario">usuario</option>
+                             </select> 
+                    </div>
+                      <input type="button" value="GUARDAR" id="btnsave"/>
+                      <input type="button" value="MODIFICAR" id="btnmodificar"/>
+                     </ul> 
+         </form>
+          <table id="tblList"></table>
+         <script type="text/javascript">cargarlista();</script>
+         <script type="text/javascript">prepareBinding();</script>
+         </body>
 </html>
